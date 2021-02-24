@@ -62,9 +62,9 @@ while 1:
             break
         elif em1 != em:
             print('Email incorreto')
-            sleep(3)
+            sleep(2)
 
         elif sh1 != sh:
             print('Senha incorreta')
-            sleep(3)
+            sleep(2)
         break
