@@ -3,8 +3,6 @@ from time import sleep
 
 cabecalho('LOGIN')
 
-usuario = Usuario()
-usuario.confirmarLogin()
 
 cabecalho('INFORMAÇÕES PESSOAIS')
 
