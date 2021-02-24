@@ -1,0 +1,31 @@
+email= []
+senha=[]
+while 1:
+    cabecalho('Tela inicial')
+    menu(['Cadastrar','Fazer login'])
+    opi=int(input('Digite a opção que deseja.: '))
+    print(linha())
+    if opi==1:
+        em=str(input('Digite seu email.: '))
+        sh=str(input('Agora, digite sua senha.: '))
+        email.append(em)
+        senha.append(sh)
+        print('Cadastro realizado com sucesso. Aguarde.')
+        sleep(1.5)
+    if opi ==2:
+        em1=str(input('Digite seu email.: '))
+        sh1=str(input('Agora digite sua senha.: '))
+        em= email[0]
+        sh=senha[0]
+
+        if em1 == em and sh1 == sh:
+            print(linha())
+            print('Login realizado com sucesso. Aguarde.')
+            sleep(2)
+	elif em1 != em:
+            print('Email incorreto')
+            sleep(3)
+
+        elif sh1 != sh:
+            print('Senha incorreta')
+            sleep(3)
